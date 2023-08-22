@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  background: #EFEFEF;
+
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  height: 436px;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background: #535971;
+}
+
+.page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+h1, legend, .button {
+  font-family: 'Staatliches', cursive;
+}
+
+h1, p, .button {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+
+  margin-top: 140px;
+  margin-bottom: 18px;
+}
+
+p {
+font-size: 20px;
+font-weight: 400;
+
+margin-bottom: 58px;
+}
+
+form {
+  background: #FFFFFF;
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 64px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 div {
+  width: 100%;
+  flex-grow: 1;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+color: #535971;
+
+font-size: 24px;
+line-height: 34px;
+
+border-bottom: 1px solid #E6E6F0;;
+padding-bottom: 16px;
+
+margin-bottom: 36px;
+}
+
+fieldset label {
+  color: #4E4958;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+
+fieldset label span {
+  color: #C1BCCC;
+
+  font-size: 12px;
+  line-height: 20px;
+}
+
+fieldset label span:hover {
+  color: #8e8b94;
+}
+
+.input-wrapper input {
+  height: 56px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  margin: 8px 0 19px 0;
+  padding: 0 10px;
+
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+
+  background: var(--shapes-02, #FAFAFC);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 160px;
+
+  margin-bottom: 366px;
+
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  width: 608px;
+  height: 55px;
+  padding: 15px 40px;
+
+  border: none;
+  border-radius: 20px;
+  background: #FF5374;
+
+  color: #FFF;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button:hover {
+  background: #f7395f;
+}
+
+.time-col-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.time-col-2 {
+  display: flex;
+  gap: 10px;
+}
+
+.time-col-3 div, .time-col-2 div {
+  width: 100%;
+  flex-grow: 1;
+}
+
+::-webkit-datetime-edit-ampm-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-millisecond-field,
+::-webkit-datetime-edit-minute-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-second-field,
+::-webkit-datetime-edit-week-field,
+::-webkit-datetime-edit-year-field,
+::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
